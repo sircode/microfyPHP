@@ -3,7 +3,7 @@
 /**
  * microfyPHP
  * microfy_aliases.php
- * v0.1.5 
+ * v0.1.8 
  * Author: SirCode
  */
 
@@ -297,8 +297,8 @@ if (!function_exists('slugify')) {
     }
 }
 if (!function_exists('h')) {
-    function h(...$args) {
-        return Microfy::h(...$args);
+    function hx(...$args) {
+        return Microfy::hx(...$args);
     }
 }
 if (!function_exists('b')) {
