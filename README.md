@@ -31,7 +31,7 @@ Forget frameworks when all you need is power and speed — **Microfy** is your c
 * **Request Access**: `getVar()`, `postVar()`, `requestVar()` and prefixed variants
 * **Debug Tools**: `pp()`, `pd()`, `mpp()`, `mlog()`, with optional returns (`pdd()`, `pdr()`)
 * **Database**: PDO helpers like `dbPdo()`, `dbAll()`, `dbExists()`, etc.
-* **HTML Snippets**: `h()`, `br()`, `codePhp()`, `mark()`, `a()`, `b()`, `ul()`, `li()` and more
+* **HTML Snippets**: `hx()`, `br()`, `codePhp()`, `mark()`, `a()`, `b()`, `ul()`, `li()` and more
 * **Array Utils**: `getArray()` (formerly `getR()`) for safe key lookups
 * **Slugify**: Easily generate SEO-safe slugs
 * **JSON Reader**: `jsonf()` for simple flat-file configs
@@ -183,7 +183,7 @@ Microfy::load('config');
 ### 🖼️ HTML Helpers
 
 ```php
-Microfy::h(2, 'Welcome');
+Microfy::hx(2, 'Welcome');
 echo Microfy::b('Bold text');
 echo Microfy::slugify('This is a title!');
 Microfy::ok(); // JSON response
