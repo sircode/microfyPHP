@@ -3,7 +3,7 @@
 /**
  * microfyPHP
  * microfy_echo_aliases.php
- * v0.1.5 
+ * v0.1.8 
  * Author: SirCode
  */
 
@@ -27,13 +27,6 @@ if (! function_exists('e_sendJson')) {
     {
         echo Microfy::sendJson($data);
         exit;
-    }
-}
-
-if (! function_exists('e_h')) {
-    function e_h(int $level, string $text, string $class = ''): void
-    {
-        echo Microfy::h($level, $text, $class);
     }
 }
 
@@ -239,9 +232,9 @@ if (! function_exists('e_htmlTable')) {
  */
 
 if (! function_exists('e_h')) {
-    function e_h(int $level, string $text, string $class = ''): void
+    function e_hx(int $level, string $text, string $class = ''): void
     {
-        echo Microfy::h($level, $text, $class);
+        echo Microfy::hx($level, $text, $class);
     }
 }
 
