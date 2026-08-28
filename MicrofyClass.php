@@ -4,7 +4,7 @@ declare(strict_types=1);
 /**
  * microfyPHP
  * MicrofyClass.php
- * v0.1.6
+ * v0.1.8
  * Author: SirCode
  */
 class Microfy
@@ -610,7 +610,7 @@ class Microfy
      * ──────────────────────────────────────────────────────────────────────────────
      */
 
-    public static function h(int $level, string $text, string $class = ''): string
+    public static function hx(int $level, string $text, string $class = ''): string
     {
         $level     = max(1, min(6, $level));
         $classAttr = $class ? " class=\"$class\"" : '';
@@ -652,7 +652,7 @@ class Microfy
     Microfy::def('APP_NAME', 'microfy');
     Microfy::load('config');
 
-    Microfy::h(2, 'Welcome');
+    Microfy::hx(2, 'Welcome');
     echo Microfy::b('Bold text');
     echo Microfy::slugify('This is a title!');
     Microfy::ok(); // JSON response
